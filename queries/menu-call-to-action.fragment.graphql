@@ -1,0 +1,7 @@
+#import './menu-item.fragment.graphql'
+
+fragment MenuCallToAction on MenuCallToActionRecord {
+    link {
+        ...MenuItem
+    }
+}

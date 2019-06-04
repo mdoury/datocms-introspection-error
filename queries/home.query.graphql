@@ -1,0 +1,7 @@
+#import ".menu-info.fragment.graphql"
+
+query homePage {
+    menu {
+        ...MenuInfo
+    }
+}

@@ -1,0 +1,8 @@
+#import './menu-item.fragment.graphql'
+
+fragment MenuCategory on MenuCategoryRecord {
+    title
+    links {
+        ...MenuItem
+    }
+}

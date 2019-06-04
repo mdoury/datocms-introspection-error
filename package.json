@@ -1,0 +1,18 @@
+{
+  "name": "datocms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "envFile": "${workspaceFolder}/.env",
+  "scripts": {
+    "clean"        : "del __generated__/**",
+    "types:prod"   : "node ./scripts/types.js https://graphql.datocms.com/",
+    "types:preview": "node ./scripts/types.js https://graphql.datocms.com/preview/"
+  },
+  "devDependencies": {
+    "apollo": "^2.12.5",
+    "del-cli": "^2.0.0",
+    "dotenv": "^8.0.0",
+    "shelljs": "^0.8.3"
+  }
+}

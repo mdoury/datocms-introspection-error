@@ -1,0 +1,19 @@
+#import './menu-category.fragment.graphql'
+#import './menu-call-to-action.fragment.graphql'
+#import './menu-external-link.fragment.graphql'
+#import './menu-link.fragment.graphql'
+
+fragment DesktopMenuInfo on MenuModelDesktopMenuField {
+    ...on MenuCategoryRecord {
+        ...MenuCategory
+    }
+    ...on MenuCallToActionRecord {
+        ...MenuCallToAction
+    }
+    ...on MenuExternalLinkRecord {
+        ...MenuExternalLink
+    }
+    ...on MenuLinkRecord {
+        ...MenuLink
+    }
+}

@@ -1,0 +1,11 @@
+#import "./desktop-menu-info.fragment.graphql"
+#import "./mobile-menu-info.fragment.graphql"
+
+fragment MenuInfo on MenuRecord {
+    desktopMenu {
+        ...DesktopMenuInfo
+    }
+    mobileMenu {
+        ...MobileMenuInfo
+    }
+}

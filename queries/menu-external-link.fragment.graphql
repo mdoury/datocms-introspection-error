@@ -1,0 +1,7 @@
+#import './menu-item.fragment.graphql'
+
+fragment MenuExternalLink on MenuExternalLinkRecord {
+    link {
+        ...MenuItem
+    }
+}
